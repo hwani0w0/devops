@@ -1,3 +1,6 @@
-### devops learning
+### DevOps 공부 기록
++ 23.04.07~
 
-devops 공부 기록
+### List
++ AWS CI/CD
++ Kubernetes
