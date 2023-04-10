@@ -1,4 +1,4 @@
-## kubectl 명령어
+## Pod
 
 pod 생성 `create`  `apply` 둘다 가능
 ```bash
@@ -22,7 +22,7 @@ kubectl run test --image=redis --dry-run=client -o yaml
 kubectl run test --image=redis --dry-run=client -o yaml > test.yaml
 ```
 
-pod yaml 파일 예시
+pod yaml 예시
 ```yaml
 apiVersion : v1
 kind : Pod
