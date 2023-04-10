@@ -7,17 +7,17 @@ kubectl create -f deployment definition.yml
 kubectl get deployments
 ```
 
-### 생성 모든 객체 한번에 보기
+#### 생성 모든 객체 한번에 보기
 ```bash
 kubectl get all
 ```
 
-### yaml 파일 생성어려울 때는..
+#### yaml 파일 생성어려울 때는..
 ```bash
 kubectl run 
 ```
 
-예시
+#### 예시
 ```bash
 # pod 생성
 kubectl run nginx --image=nginx
