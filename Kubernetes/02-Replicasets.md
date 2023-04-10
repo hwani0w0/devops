@@ -1,11 +1,11 @@
-## kubectl 명령어
+## Replicasets
 
 replicasets yaml 작성 가이드
 ```bash
 kubectl explain replicaset 
 ```
 
-replica yaml 파일 예시
+replica yaml 예시
 ```yaml
 apiVersion: apps/v1
 kind: ReplicaSet
@@ -46,7 +46,7 @@ kubectl describe rs
 kubectl delete pod new-replica-set-123 # 삭제하면 변경된 replicaset 적용된 pod 자동 실행
 ```
 
-스캐일아웃
+Scale 변경
 ```bash
 kubectl scale rs new-replica-set --replicas=5
 ```
