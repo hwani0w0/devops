@@ -1,6 +1,9 @@
 ## Namespaces
 `dev`환경과 `prod`환경을 구별할 수 있음
+
 ```bash
+kubectl get namespaces
+ 
 kubectl get pods --namespace=dev
 kubectl create pod-definition.yml --namespace=dev  # 혹은 yaml파일에 추가
 ```
@@ -12,6 +15,10 @@ kubectl config set-context $(kubectl config current-context) --namespcae=dev  # 
 kubectl get pods
 
 kubectl get pods --all-namepasces
+```
+
+```bash
+kubectl run redis --image=redis --namespace=finance
 ```
 ## Resource Quota
 Namepace 리소스 제한
