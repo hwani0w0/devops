@@ -17,10 +17,10 @@ metadata:
 spec:
   type: NodePort
   ports:
-  - targetPort: 80		# 애플리케이션 포트
-    port: 80		      # 서비스 포트
-    nodePort: 30008		# 외부 사용자가 애플리케이션에 접근하기 위한 포트(optional)
-  selector:				    # 서비스와 연결되는 파드
+  - targetPort: 80  # 애플리케이션 포트
+    port: 80  # 서비스 포트
+    nodePort: 30008  # 외부 사용자가 애플리케이션에 접근하기 위한 포트(optional)
+  selector:  # 서비스와 연결되는 파드
     app: myapp
     type: frontend
 ```
@@ -34,12 +34,12 @@ kind: Service
 metadata:
   name: myapp-service
 spec:
-  type: ClusterIP		  # optional
+  type: ClusterIP  # optional
   ports:
   - protocol: TCP
-    targetPort: 9376	# 애플리케이션 포트
-    port: 80			    # 서비스 포트
-  selector:				    # 서비스와 연결되는 파드(optional)
+    targetPort: 9376  # 애플리케이션 포트
+    port: 80  # 서비스 포트
+  selector:  # 서비스와 연결되는 파드(optional)
     app: myapp
     type: frontend
 ```
