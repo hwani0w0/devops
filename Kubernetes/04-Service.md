@@ -58,5 +58,7 @@ kubectl describe svc kubernetes
  
 kubectl create -f service-definition.yaml
 ```
+
+## Tips!
 * 쿠버네티스 홈페이지에서도 Service를 입력하고 yaml 샘플을 확인할 수 있다.
  
