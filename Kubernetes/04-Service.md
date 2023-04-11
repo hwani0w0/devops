@@ -58,7 +58,7 @@ kubectl describe svc kubernetes
  
 kubectl create -f service-definition.yaml
 ```
-`service-definition.yaml` sample
+**service-definition.yaml** sample
 ```yaml
 ---
 apiVersion: v1
