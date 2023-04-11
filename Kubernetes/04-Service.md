@@ -49,7 +49,7 @@ spec:
 * **NodePort** 동일하게 동작
  
  
-### Command
+## Command
 ```bash
 kubectl get service
 kubectl get svc
@@ -58,7 +58,24 @@ kubectl describe svc kubernetes
  
 kubectl create -f service-definition.yaml
 ```
-
+`service-definition.yaml` sample
+```yaml
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: webapp-service 
+  namespace: default
+spec:
+  ports:
+  - nodePort: 30080
+    port: 8080
+    targetPort: 8080
+  selector:
+    name: simple-webapp
+  type: NodePort
+ ```
+ 
 ## Tips!
 * 쿠버네티스 홈페이지에서도 Service를 입력하고 yaml 샘플을 확인할 수 있다.
  
