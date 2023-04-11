@@ -13,3 +13,23 @@ kubectl get pods
 
 kubectl get pods --all-namepasces
 ```
+## Resource Quota
+Namepace 리소스 제한
+리소스에 용량 할당
+```bash
+kubectl create -f compute-quota.yaml
+```
+```yaml
+apiVersion: v1
+kind: ResourceQuota
+meatadata:
+  name: compute-quota
+  namespace: dev
+spec:
+  hard:
+    pods: "10"
+    requests.cpu: "4"
+    requests.memory: 5Gi
+    limits.cpu: "10"
+    limits.memory: 10Gi
+```
