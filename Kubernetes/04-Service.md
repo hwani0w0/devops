@@ -5,8 +5,8 @@
 -Endpoints는 PodIP:APPort
  
  
-1. NodePort
-`NodeIP:NodePort` 요청을 연결된 Pod로 트래픽 전달
+#### 1. NodePort
+-`NodeIP:NodePort` 요청을 연결된 Pod로 트래픽 전달
 로드밸런서 기능
 **ClusterIP** 자동생성
 ```yaml
@@ -25,9 +25,9 @@ spec:
     type: frontend
 ```
  
-2. Cluster IP
-`PodIP:ApplicationPort`를 `NodeIP:NodePort`로 넘겨줌
-여기서 파드는 클러스터(혹은 그룹화) 형태
+#### 2. Cluster IP
+-`PodIP:ApplicationPort`를 `NodeIP:NodePort`로 넘겨줌
+-여기서 파드는 클러스터(혹은 그룹화) 형태
 ```yaml
 apiVersion: v1
 kind: Service
@@ -44,9 +44,9 @@ spec:
     type: frontend
 ```
  
-3. LoadBalancer
-CSP(GCP, AWS, Azure ...) 환경에서 제공하는 로드밸런서-쿠버네티스 클러스터(파드그룹)
-**NodePort** 동일하게 동작
+#### 3. LoadBalancer
+-CSP(GCP, AWS, Azure ...) 환경에서 제공하는 로드밸런서-쿠버네티스 클러스터(파드그룹)
+-**NodePort** 동일하게 동작
  
  
 ### Command
