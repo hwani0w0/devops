@@ -20,6 +20,13 @@ kubectl get pods --all-namepasces
 ```bash
 kubectl run redis --image=redis --namespace=finance
 ```
+
+## DNS
+DNS는 다음과 같은 형태 `db-service.dev.svc.cluster.local` 
+차례로 `<Service Name>.<Namespace>.<Service>.<Domain>` 조합으로 구성
+서비스가 생성될 때 DNS 항목이 자동으로 추가
+
+
 ## Resource Quota
 Namepace 리소스 제한
 리소스에 용량 할당
