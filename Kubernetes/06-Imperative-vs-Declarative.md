@@ -8,7 +8,7 @@
 ## Declarative
 + **선언적**
 + 요구사항 선언
-+ ex) Ansible, Puppet, Chef, Terraform
+  ex) Ansible, Puppet, Chef, Terraform
 + Create Objects : apply
 + Update Objects
 
@@ -56,7 +56,7 @@ kubectl expose pod redis --port=6379 --name redis-service --dry-run=client -o ya
 ```
 Or
 ```bash
-kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml (This will not use the pods labels as selectors, instead it will assume selectors as app=redis. You cannot pass in selectors as an option. So it does not work very well if your pod has a different label set. So generate the file and modify the selectors before creating the service)
+kubectl create service clusterip redis --tcp=6379:6379 --dry-run=client -o yaml
 ```
 Create a Service named nginx of type NodePort to expose pod nginx's port 80 on port 30080 on the nodes:
 ```bash
