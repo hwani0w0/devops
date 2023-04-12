@@ -1,16 +1,16 @@
 ## Imperative
-**명령적**
-step by step
-단계별 지침서
-- Create Objects : create 
-- Update Objects
++ **명령적**
++ step by step
++ 단계별 지침서
++ Create Objects : create 
++ Update Objects
 
 ## Declarative
-**선언적**
-요구사항 선언
-ex) Ansible, Puppet, Chef, Terraform
-- Create Objects : apply
-- Update Objects
++ **선언적**
++ 요구사항 선언
++ ex) Ansible, Puppet, Chef, Terraform
++ Create Objects : apply
++ Update Objects
 
 
 ## Tips!
