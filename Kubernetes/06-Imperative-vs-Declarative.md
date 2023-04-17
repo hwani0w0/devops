@@ -7,10 +7,7 @@
 
 ## Declarative
 + **선언적**
-+ 요구사항 선언
-
-ex) Ansible, Puppet, Chef, Terraform
-
++ 요구사항 선언 (ex. Ansible, Puppet, Chef, Terraform)
 + Create Objects : apply
 + Update Objects
 
