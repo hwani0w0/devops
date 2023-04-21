@@ -82,8 +82,7 @@ kubectl taint nodes controlplane node-role.kubernetes.io/control-plane:NoSchedul
 kubectl label nodes <node-name> <label-key>=<label-value>
 ```
 유용하지만 한계
-복잡한 환경에서 어려움
->> 해결법 node affinity
+복잡한 환경에서 어려움 -> 해결법 node affinity
 
 
 ## Node Affinity
