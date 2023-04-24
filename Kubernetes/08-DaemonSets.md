@@ -50,6 +50,11 @@ spec:
    
 ## Static Pods
 kubelet 각각 노드를 관리할 수 있음
+단일 노드의 경우, 쿠버네티스클러스터서버와 api서버가 없으므로 pod 정의 파일은 쿠블레 설정파일에서 읽음(서버의 디렉터리)
+=> 이러한 pod를 static pods 라고 함
 
+wjdwjr vhemsms
+쿠버네티스제어에 제한 받지 않음
+서비스 충돌 방지
 
 ## Multiple Schedulers
