@@ -49,12 +49,32 @@ spec:
 ```
    
 ## Static Pods
-kubelet 각각 노드를 관리할 수 있음
-단일 노드의 경우, 쿠버네티스클러스터서버와 api서버가 없으므로 pod 정의 파일은 쿠블레 설정파일에서 읽음(서버의 디렉터리)
-=> 이러한 pod를 static pods 라고 함
+kubelet 각각 노드를 관리할 수 있음   
+단일 노드의 경우, 쿠버네티스클러스터서버와 api서버가 없으므로 pod 정의 파일은 쿠블레 설정파일에서 읽음(서버의 디렉터리)   
++ pod 정의 directory 경로   
++ /var/lib/kubelet/config.yaml
+   
+=> 이렇게 생성된 pod를 static pods 라고 함   
+정적 포드는 쿠버네티스제어(controller)에 제한 받지 않음   
+서비스 충돌 방지 용도로 사용   
+생성된 포드 NAME 끝에 -nodename 추가   
+   
+ex)
+```bash
+kubectl run static-busybox --image=busybox --dry-run=client -o yaml --command -- sleep 1000 > static-busybox.yaml
+cp static-busybox.yaml /etc/kubernetes/manifests/
+kubectl get pods --watch
+```
 
-wjdwjr vhemsms
-쿠버네티스제어에 제한 받지 않음
-서비스 충돌 방지
-
+   
 ## Multiple Schedulers
++ kube-Scheduler를 활용하지 않고 개별 스케줄러를 생성하여 리소스 배포 시 사용 가능
++ 또한 1개가 아닌 여러개의 스케줄러를 동시에 사용 가능
+   
+적용확인
+```bash
+kubectl get events -o wide
+```
+
+## Scheduler Profiles 
+ 
