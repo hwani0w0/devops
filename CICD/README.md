@@ -2,7 +2,11 @@
 ## 🏆 Goal
 - PAAS-TA 환경에서 Privat Cloud 서비스 환경을 구축
 - Jenkins를 사용하여 CI/CD 파이프라인으로 자동화 배포
-
+  
 ## 💻 TEAM
 - 참여자: mnh4140, JunPyo0117, hwani0w0
 - 작성일: 2023.07.05~
+
+## 🗺️ Architecture
+![image](https://github.com/hwani0w0/devops/assets/112611582/93c4bbfc-1c8d-4a29-81ca-2b19ebc84045)
+  
