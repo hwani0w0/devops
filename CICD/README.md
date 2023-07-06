@@ -1,6 +1,6 @@
-# PAAS-TA Private Cloud CI/CD Pipeline Project
+# PaaS-TA Private Cloud CI/CD Pipeline Project
 ## 🏆 Goal
-- PAAS-TA 환경에서 Privat Cloud 서비스 환경을 구축
+- PaaS-TA 환경에서 Privat Cloud 서비스 환경을 구축
 - Jenkins를 사용하여 CI/CD 파이프라인으로 자동화 배포
   
 ## 💻 TEAM
