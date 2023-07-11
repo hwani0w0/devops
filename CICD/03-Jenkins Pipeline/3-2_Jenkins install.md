@@ -1,5 +1,15 @@
 # 3-2 Jenkins 설치
-- Ubuntu 
+- Jenkins 설치 최소 요구사항
+  - CPU : 1Core
+  - MEM : 1GB
+  - HDD : 1GB
+- 소규모 팀 권장 사양
+  - CPU : 4Core
+  - MEM : 4GB
+  - HDD : 50GB
+
+   
+- Ubuntu 서버 설치 방법
 ```bash
 sudo apt-get install openjdk-11-jdk -y
 curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee \
@@ -14,8 +24,8 @@ sudo apt-get install jenkins -y
 sudo systemctl enable jenkins
 sudo systemctl start jenkins
 ```
-   
-- CentOS
+
+- CentOS 서버 설치 방법
 ```bash
 # CentOS
 yum list java*jdk-devel
