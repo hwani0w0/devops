@@ -1,9 +1,9 @@
-# 1.4 Replicasets
-## 1.4.1 기능
+# 1-4 Replicasets
+## 1-4-1 기능
 - 명시된 파드 가용성 보증
 - 복제 파드 집합의 실행을 항상 안정적으로 유지
   
-## 1.4.2 사용
+## 1-4-2 사용
 - replicasets 생성 `create`  `replace` 둘다 가능
 ```bash
 kubectl create -f replicaset.yaml
