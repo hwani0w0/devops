@@ -14,7 +14,7 @@
 ## 1-9-2 Declarative
 + **선언적**
 + 요구사항 선언 (ex. Ansible, Puppet, Chef, Terraform)
-+ yaml 파일에 오브젝트를 적의하고 `apply`로 생성
++ yaml 파일에 오브젝트를 정의하고 `apply`로 생성
 + Create Objects : `apply`
 + Update Objects : `apply`
 + 단점
