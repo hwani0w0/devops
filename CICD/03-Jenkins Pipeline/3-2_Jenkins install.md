@@ -17,7 +17,6 @@ sudo systemctl start jenkins
    
 - CentOS
 ```bash
-   
 # CentOS
 yum list java*jdk-devel
 sudo yum install -y java-11-openjdk-devel.x86_64
@@ -33,20 +32,20 @@ sudo systemctl enable jenkins
 sudo systemctl start jenkins
 ```
    
-- Jenkins initial password
+- Jenkins 초기 비밀번호
 ```bash
-sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
 
 - Jenkins Port는 기본적으로 `TCP 8080`이며 config 파일을 통해 변경
 ```bash
 # CentOS 경우
 sudo vim /etc/sysconfig/jenkins
-  JENKINS_PORT="**8080**"
+  JENKINS_PORT="8080"
    
 # Ubuntu 경우
 sudo vim /lib/systemd/system/jenkins.service
-  Environment="JENKINS_PORT=**8080**" # 원하는 포트 번호로 수정
+  Environment="JENKINS_PORT=8080" # 원하는 포트 번호로 수정
    
 systemctl restart jenkins
 ```
