@@ -1,5 +1,5 @@
 # 3-2 Jenkins 설치
-- Jenkins 설치 최소 요구사항
+- 설치 최소 요구사항
   - CPU : 1Core
   - MEM : 1GB
   - HDD : 1GB
@@ -8,7 +8,8 @@
   - MEM : 4GB
   - HDD : 50GB
    
--
+---
+
 - Ubuntu 서버 설치 방법
 ```bash
 sudo apt-get install openjdk-11-jdk -y
