@@ -8,7 +8,7 @@
   - MEM : 4GB
   - HDD : 50GB
    
-    
+-
 - Ubuntu 서버 설치 방법
 ```bash
 sudo apt-get install openjdk-11-jdk -y
