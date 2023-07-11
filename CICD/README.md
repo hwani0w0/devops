@@ -8,5 +8,4 @@
 - 작성일: 2023.07.05~
 
 ## 🗺️ Architecture
-![image](https://github.com/hwani0w0/devops/assets/112611582/93c4bbfc-1c8d-4a29-81ca-2b19ebc84045)
-  
+
