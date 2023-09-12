@@ -95,16 +95,35 @@
   - 일관적인 복제
 #### NoSQL
 - Bigtable
-  - fully m
+  - fully managed
   - scalable
-  - hight th
+  - hight throughput
+  - cluster resizing without downtime
 - Datastore
-  - 
+  - fast, fully managed
+  - serverless
+  - for mobile, web, and IoT apps
+  - multi-region replication
+  - ACID
+- Firestore
+  - realtime db
+  - cluster resizing without downtime
+- Memorystore
+  - HA in-memory service for Redis
+  - fully managed
 
 
-
-
-
+## Networking Service
+- VPC : 내부 가상화 네트워크. 핵심 네트워킹 서비, 기본 네트워크+추가 네트워크, 프로젝트간 공유 불가능
+- Firewall : 트래픽 추적
+- Routes : 트래픽 방향
+- Load Balanceing : type - HTTP(S) / Network
+- Google Cloud DNS : 100개 제공?
+- Cloud VPN : 온프레미스. IPSec 연결
+- Direct Interconnect : HA, low-latency
+- Advanced Connectivity
+  - Direct Peering : 
+  - Carrier peering :
 
 
 
